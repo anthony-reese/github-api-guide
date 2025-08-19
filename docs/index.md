@@ -1,3 +1,7 @@
+---
+title: GitHub API Guide
+---
+
 # Integrating the GitHub API using curl and Postman
 
 ![License](https://img.shields.io/github/license/anthony-reese/github-api-guide)
