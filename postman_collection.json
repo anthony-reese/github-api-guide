@@ -1,0 +1,157 @@
+{
+  "info": {
+    "name": "GitHub API Demo - securitypro-docs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "github-api-demo-securitypro-docs"
+  },
+  "item": [
+    {
+      "name": "Get Authenticated User",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{github_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.github.com/user",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Repos for Authenticated User",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{github_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.github.com/user/repos",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user",
+            "repos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Specific Repo (securitypro-docs)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{github_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.github.com/repos/anthony-reese/securitypro-docs",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "anthony-reese",
+            "securitypro-docs"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Issue in securitypro-docs",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{github_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Sample issue from Postman\", \"body\": \"This issue was created as part of a GitHub API demo.\"}"
+        },
+        "url": {
+          "raw": "https://api.github.com/repos/anthony-reese/securitypro-docs/issues",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "anthony-reese",
+            "securitypro-docs",
+            "issues"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Star Repo (securitypro-docs)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{github_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Length",
+            "value": "0",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.github.com/user/starred/anthony-reese/securitypro-docs",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user",
+            "starred",
+            "anthony-reese",
+            "securitypro-docs"
+          ]
+        }
+      }
+    }
+  ]
+}
