@@ -270,6 +270,6 @@ Run with:
 ./curl-scripts/create-repo.sh test-repo
 ```
 
-## License
+## LICENSE
 
 This project is licensed under the [MIT License](./LICENSE).
