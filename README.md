@@ -13,11 +13,16 @@ This project provides real-world examples of API authentication, core endpoint u
 ```
 github-api-guide/
 ├── postman_collection.json
-├── curl-scripts/
+│   ├── create-issue.sh
+│   ├── create-repo.sh
 │   ├── get-user.sh
-│   └── create-issue.sh
+│   ├── list-repos.sh
+│   └── star-repo.sh
 ├── assets/
 │   └── postman-auth-example.png
+├── docs/
+│   ├── index.md
+│   └── _config.yml
 ├── README.md
 └── LICENSE
 ```
